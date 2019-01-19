@@ -1,0 +1,4 @@
+1- Conseguir recursos necesarios(Imágenes o CSS)
+2- Definir un diseño sobre la página
+3- Escribir el algoritmo (2 eventos. Click y tecla)
+4- Hacer pruebas y corregir hasta finalizar la app
