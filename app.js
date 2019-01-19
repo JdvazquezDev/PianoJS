@@ -1,4 +1,4 @@
-
+//Reproducir el sonido hacienco clic con el ratón
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach(	
@@ -16,3 +16,11 @@ function playSound(event) {
 	audio.currentTime = 0;
 	audio.play();
 }
+
+//Reproducir el sonido usando teclas predeterminadas del teclado
+document.addEventListener('keydown', event => {
+	const key = event.key;
+	const button = document.querySelector(`button[data-key="${key}"]`);
+	if(button)//Evitar error de pulsar una tecla con valor null
+		button.click(); //Trigger
+});
